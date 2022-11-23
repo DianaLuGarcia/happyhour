@@ -3,11 +3,11 @@ import { Route, Routes } from "react-router-dom";
 import { Box } from "@mui/material"; //div with shading and colors
 
 import "./App.css";
-import CocktailDetails from "./pages/CocktailDetails/CocktailDetails";
-import Navbar from "./components/Navbar/Navbar";
-import Home from "./pages/Home/Home";
-import Profile from "./pages/Profile/Profile";
-import Footer from "./components/Footer/Footer";
+import CocktailDetails from "./pages/CocktailDetails";
+import Navbar from "./components/Navbar";
+import Home from "./pages/Home";
+import Profile from "./pages/Profile";
+import Footer from "./components/Footer";
 
 const App = () => {
   return (

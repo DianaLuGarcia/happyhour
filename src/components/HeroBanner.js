@@ -1,6 +1,6 @@
 import React from "react";
 import { Box, Button, Typography } from "@mui/material";
-import HeroBannerImage from "./../../assets/images/banner.png";
+// import HeroBannerImage from "./../assets/images/banner.png";
 
 const HeroBanner = () => {
   return (
@@ -14,7 +14,7 @@ const HeroBanner = () => {
     >
       <Box id='hero-text'>
         <Typography color='#A8E6CF' variant='h3' fontWeight='600'>
-          The best hour <br /> is happy hour!
+          The BEST hour <br /> is Happy Hour!
         </Typography>
         <Typography
           color='#3A1212'
@@ -31,14 +31,14 @@ const HeroBanner = () => {
           Explore Cocktails
         </Button>
       </Box>
-      <Box id='banner-img'>
+      {/* <Box id='banner-img'>
         <img
           style={{ width: "50%", height: "50%", margin: "0 20px" }}
           src={HeroBannerImage}
           alt='Banner'
           marginRight='20px'
         />
-      </Box>
+      </Box> */}
     </Box>
   );
 };
