@@ -13,7 +13,7 @@ import RandomCocktails from "../components/RandomCocktails";
 import RecipeGrid from "../components/RecipeGrid";
 // import ImageButton from "../components/ImageButton";
 
-const Cocktails = ({ data, cocktails, setCocktails }) => {
+const Browse = ({ data, Browse, setCocktails }) => {
   return (
     <Box>
       <Navbar />
@@ -29,4 +29,4 @@ const Cocktails = ({ data, cocktails, setCocktails }) => {
   );
 };
 
-export default Cocktails;
+export default Browse;
