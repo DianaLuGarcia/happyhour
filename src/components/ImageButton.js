@@ -9,18 +9,18 @@
 //   return (
 //     <Box sx={{ flexGrow: 1 }}>
 //       <ImageList
-//         sx={{ width: 800, height: 650 }}
-//         columns={4}
-//         rows={3}
-//         rowHeight={394}
+// sx={{ width: 800, height: 650 }}
+// columns={4}
+// rows={3}
+// rowHeight={394}
 //       >
 //         {data.map((item) => (
 //           <ImageListItem key={item.strDrinkThumb}>
 //             {item.strDrink}
 //             <img
-//               src={`${item.strDrinkThumb}?w=248&fit=crop&auto=format`}
-//               alt={item.strDrink}
-//               loading='lazy'
+// src={`${item.strDrinkThumb}?w=248&fit=crop&auto=format`}
+// alt={item.strDrink}
+// loading='lazy'
 //             />
 //             <ImageListItemBar
 //               title={item.strDrink}

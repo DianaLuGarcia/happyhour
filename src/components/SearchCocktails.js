@@ -1,11 +1,10 @@
 import React, { useState } from "react";
 import { Box, Button, Stack, TextField, Typography } from "@mui/material";
-// import { cocktailOptions } from "../Utils/fetchData";
 import axios from "axios";
-import HorizontalScrollbar from "./HorizontalScrollbar";
 // import ImageButton from "./ImageButton";
 import SearchResults from "./SearchResults";
-import Browse from "././pages/Browse";
+// import Browse from "./pages/Browse";
+import { Link } from "react-router-dom";
 
 const SearchCocktails = ({
   setCocktails,
@@ -96,31 +95,26 @@ const SearchCocktails = ({
           placeholder='Search Cocktails'
           type='text'
         />
-        <Button
-          className='search-btn'
-          sx={{
-            bgcolor: "#0083db",
-            color: "#fff",
-            textTransform: "none",
-            width: { lg: "175px", xs: "80px" },
-            fontSize: { lg: "20px", xs: "14px" },
-            height: "56px",
-            position: "absolute",
-            right: "0",
-          }}
-          onClick={Browse.href}
-        >
-          Search
-        </Button>
+        <Link to='/browse'>
+          <Button
+            className='search-btn'
+            sx={{
+              bgcolor: "#0083db",
+              color: "#fff",
+              textTransform: "none",
+              width: { lg: "175px", xs: "80px" },
+              fontSize: { lg: "20px", xs: "14px" },
+              height: "56px",
+              position: "absolute",
+              right: "0",
+            }}
+          >
+            Search
+          </Button>
+        </Link>
       </Box>
 
       <Box sx={{ position: "relative", width: "100%", padding: "20px" }}>
-        <HorizontalScrollbar
-          data={cocktails}
-          cocktail={cocktail}
-          setCocktail={setCocktail}
-        />
-
         <SearchResults
           data={cocktails}
           cocktail={cocktail}

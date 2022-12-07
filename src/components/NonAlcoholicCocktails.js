@@ -1,7 +1,7 @@
 import React from "react";
 import axios from "axios";
 
-const NonAlcoholic = async () => {
+const NonAlcoholicCocktails = async () => {
   const nonAlcoholic = await axios.get(
     `https://www.thecocktaildb.com/api/json/v2/${process.env.REACT_APP_RAPID_API_KEY}/filter.php?a=Non_Alcoholic`
   );
@@ -10,4 +10,4 @@ const NonAlcoholic = async () => {
   return <div>NonAlcoholic</div>;
 };
 
-export default NonAlcoholic;
+export default NonAlcoholicCocktails;

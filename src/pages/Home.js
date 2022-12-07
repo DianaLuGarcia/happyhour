@@ -5,7 +5,7 @@ import SearchCocktails from "../components/SearchCocktails";
 // import ImageButton from "../components/ImageButton";
 // import Cocktail from "../components/Cocktail";
 import SearchResults from "../components/SearchResults";
-import AlcoholicCockails from "../components/AlcoholicCockails";
+import AlcoholicCockails from "../components/AlcoholicCocktails";
 
 const Home = () => {
   const [cocktails, setCocktails] = useState([]);
@@ -20,7 +20,6 @@ const Home = () => {
         searchThumbnail={searchThumbnail}
         thumbnail={thumbnail}
       />
-
       <SearchResults />
     </Box>
   );

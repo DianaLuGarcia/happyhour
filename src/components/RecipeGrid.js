@@ -1,7 +1,8 @@
-import { useTheme } from "@emotion/react";
-import { useMediaQuery } from "@mui/material";
-import axios from "axios";
-import React, { useState } from "react";
+// import { useTheme } from "@emotion/react";
+// import { useMediaQuery } from "@mui/material";
+// import axios from "axios";
+// import React, { useState } from "react";
+import React from "react";
 
 // const getCocktails = ({
 //   random,
