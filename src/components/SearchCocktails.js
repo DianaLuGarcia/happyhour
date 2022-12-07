@@ -3,7 +3,9 @@ import { Box, Button, Stack, TextField, Typography } from "@mui/material";
 // import { cocktailOptions } from "../Utils/fetchData";
 import axios from "axios";
 import HorizontalScrollbar from "./HorizontalScrollbar";
-import ImageButton from "./ImageButton";
+// import ImageButton from "./ImageButton";
+import SearchResults from "./SearchResults";
+import Browse from "././pages/Browse";
 
 const SearchCocktails = ({
   setCocktails,
@@ -25,10 +27,6 @@ const SearchCocktails = ({
       const drinkIngredients = await axios.get(
         `https://www.thecocktaildb.com/api/json/v2/${process.env.REACT_APP_RAPID_API_KEY}/filter.php?i=${search}`
       );
-
-      // const searchThumbnail = {
-      // //   ...drinks.data.stringDrinksThumb,
-      // // };
 
       const popularDrinks = await axios.get(
         `https://www.thecocktaildb.com/api/json/v2/${process.env.REACT_APP_RAPID_API_KEY}/popular.php`
@@ -110,18 +108,24 @@ const SearchCocktails = ({
             position: "absolute",
             right: "0",
           }}
-          onClick={handleSearch}
+          onClick={Browse.href}
         >
           Search
         </Button>
       </Box>
+
       <Box sx={{ position: "relative", width: "100%", padding: "20px" }}>
         <HorizontalScrollbar
           data={cocktails}
           cocktail={cocktail}
           setCocktail={setCocktail}
         />
-        <ImageButton />
+
+        <SearchResults
+          data={cocktails}
+          cocktail={cocktail}
+          setCocktail={setCocktail}
+        />
       </Box>
     </Stack>
   );

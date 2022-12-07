@@ -3,10 +3,10 @@ import { Route, Routes } from "react-router-dom";
 import { Box } from "@mui/material"; //div with shading and colors
 
 import "./App.css";
-import CocktailDetails from "./pages/CocktailDetails";
+import CocktailDetails from "./components/SearchResults";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
-import Profile from "./pages/Profile";
+import Browse from "./pages/Browse";
 import Footer from "./components/Footer";
 
 const App = () => {
@@ -15,8 +15,8 @@ const App = () => {
       <Navbar />
       <Routes>
         <Route path='/' element={<Home />} />
-        <Route path='/Profile/:id' element={<Profile />} />
         <Route path='/cocktail/:id' element={<CocktailDetails />} />
+        <Route path='/browse' element={<Browse />} />
       </Routes>
       <Footer />
     </Box>

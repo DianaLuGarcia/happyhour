@@ -37,14 +37,14 @@ const Navbar = () => {
           Home
         </Link>
         <a
-          href='#cocktails'
+          href='Browse'
           style={{
             textDecoration: "none",
             color: "#3A1212",
             borderBottom: "4px solid #FFFFFF",
           }}
         >
-          Cocktails
+          Browse
         </a>
       </Stack>
     </Stack>

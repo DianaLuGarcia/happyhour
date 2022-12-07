@@ -2,8 +2,10 @@ import React, { useState } from "react";
 import { Box } from "@mui/material";
 import HeroBanner from "../components/HeroBanner";
 import SearchCocktails from "../components/SearchCocktails";
-import ImageButton from "../components/ImageButton";
-// import Cocktails from "../components/Cocktails";
+// import ImageButton from "../components/ImageButton";
+// import Cocktail from "../components/Cocktail";
+import SearchResults from "../components/SearchResults";
+import AlcoholicCockails from "../components/AlcoholicCockails";
 
 const Home = () => {
   const [cocktails, setCocktails] = useState([]);
@@ -12,7 +14,6 @@ const Home = () => {
   return (
     <Box>
       <HeroBanner />
-
       <SearchCocktails
         setCocktails={setCocktails}
         cocktails={cocktails}
@@ -20,7 +21,7 @@ const Home = () => {
         thumbnail={thumbnail}
       />
 
-      {/* <Cocktails cocktails={cocktails} /> */}
+      <SearchResults />
     </Box>
   );
 };
